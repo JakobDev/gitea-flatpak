@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="desktop">
+  <!--Created with jdAppStreamEdit 7.0-->
+  <id>io.gitea.Gitea</id>
+  <name>Gitea</name>
+  <summary>Git with a cup of tea</summary>
+  <developer_name>The Gitea Authors</developer_name>
+  <launchable type="desktop-id">io.gitea.Gitea.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <description>
+    <p>Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://camo.githubusercontent.com/27a05919b189e4719d28c6663eb921094c5aad1b29ce094d9620a4e77dc2dee8/68747470733a2f2f646c2e67697465612e636f6d2f73637265656e73686f74732f686f6d655f74696d656c696e652e706e67</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="v1.19.3" date="2023-05-03" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.19.3</url>
+    </release>
+    <release version="v1.19.2" date="2023-04-28" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.19.2</url>
+    </release>
+    <release version="v1.19.1" date="2023-04-13" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.19.1</url>
+    </release>
+    <release version="v1.19.0" date="2023-03-20" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.19.0</url>
+    </release>
+    <release version="v1.19.0-rc1" date="2023-03-05" type="development">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.19.0-rc1</url>
+    </release>
+    <release version="v1.19.0-rc0" date="2023-02-22" type="development">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.19.0-rc0</url>
+    </release>
+    <release version="v1.18.5" date="2023-02-21" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.18.5</url>
+    </release>
+    <release version="v1.18.4" date="2023-02-20" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.18.4</url>
+    </release>
+    <release version="v1.18.3" date="2023-01-23" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.18.3</url>
+    </release>
+    <release version="v1.18.2" date="2023-01-20" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.18.2</url>
+    </release>
+    <release version="v1.18.1" date="2023-01-17" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.18.1</url>
+    </release>
+    <release version="v1.18.0" date="2022-12-29" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.18.0</url>
+    </release>
+    <release version="v1.17.4" date="2022-12-21" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.17.4</url>
+    </release>
+    <release version="v1.18.0-rc1" date="2022-11-24" type="development">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.18.0-rc1</url>
+    </release>
+    <release version="v1.18.0-rc0" date="2022-10-25" type="development">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.18.0-rc0</url>
+    </release>
+    <release version="v1.17.3" date="2022-10-15" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.17.3</url>
+    </release>
+    <release version="v1.17.2" date="2022-09-06" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.17.2</url>
+    </release>
+    <release version="v1.17.1" date="2022-08-18" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.17.1</url>
+    </release>
+    <release version="v1.17.0" date="2022-07-30" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.17.0</url>
+    </release>
+    <release version="v1.17.0-rc2" date="2022-07-19" type="development">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.17.0-rc2</url>
+    </release>
+    <release version="v1.16.9" date="2022-07-12" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.16.9</url>
+    </release>
+    <release version="v1.17.0-rc1" date="2022-06-20" type="development">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.17.0-rc1</url>
+    </release>
+    <release version="v1.16.8" date="2022-05-16" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.16.8</url>
+    </release>
+    <release version="v1.16.7" date="2022-05-02" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.16.7</url>
+    </release>
+    <release version="v1.16.6" date="2022-04-20" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.16.6</url>
+    </release>
+    <release version="v1.16.5" date="2022-03-24" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.16.5</url>
+    </release>
+    <release version="v1.16.4" date="2022-03-14" type="stable">
+      <url>https://github.com/go-gitea/gitea/releases/tag/v1.16.4</url>
+    </release>
+  </releases>
+  <url type="homepage">https://about.gitea.com/</url>
+  <url type="bugtracker">https://github.com/go-gitea/gitea/issues</url>
+  <url type="help">https://docs.gitea.com/</url>
+  <url type="donation">https://opencollective.com/gitea</url>
+  <url type="translate">https://crowdin.com/project/gitea</url>
+  <url type="vcs-browser">https://github.com/go-gitea/gitea</url>
+  <url type="contribute">https://github.com/go-gitea/gitea/blob/main/CONTRIBUTING.md</url>
+  <categories>
+    <category>Development</category>
+  </categories>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </recommends>
+  <content_rating type="oars-1.1"/>
+  <provides>
+    <binary>gitea</binary>
+  </provides>
+</component>

@@ -1,0 +1,11 @@
+# Created with jdDesktopEntryEdit 1.1
+[Desktop Entry]
+Type=Application
+Name=Gitea
+Comment=Git with a cup of tea
+Icon=io.gitea.Gitea
+TryExec=gitea-wrapper
+Exec=gitea-wrapper
+Terminal=true
+Categories=Development;
+SingleMainWindow=true

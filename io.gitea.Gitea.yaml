@@ -1,0 +1,87 @@
+id: io.gitea.Gitea
+runtime: org.freedesktop.Platform
+runtime-version: '22.08'
+sdk: org.freedesktop.Sdk
+finish-args:
+  - --share=network
+
+modules:
+  - name: git
+    buildsystem: autotools
+    make-install-args:
+      - NO_INSTALL_HARDLINKS=1
+    sources:
+      - type: archive
+        url: https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.41.0.tar.xz
+        sha256: e748bafd424cfe80b212cbc6f1bbccc3a47d4862fb1eb7988877750478568040
+        x-checker-data:
+          type: anitya
+          project-id: 5350
+          url-template: https://mirrors.edge.kernel.org/pub/software/scm/git/git-$version.tar.xz
+    cleanup:
+      - /share
+
+  - name: git-lfs
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 git-lfs -t $FLATPAK_DEST/bin
+    sources:
+      - type: archive
+        only-arches: [x86_64]
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.3.0/git-lfs-linux-amd64-v3.3.0.tar.gz
+        sha256: 6a4e6bd7d06d5c024bc70c8ee8c9da143ffc37d2646e252a17a6126d30cdebc1
+        x-checker-data:
+          type: anitya
+          project-id: 11551
+          url-template: https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-amd64-v$version.tar.gz
+
+      - type: archive
+        only-arches: [aarch64]
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.3.0/git-lfs-linux-arm64-v3.3.0.tar.gz
+        sha256: e97c477981a9b6a40026cadc1bf005541d973fc32df2de2f398643b15df6b5c6
+        x-checker-data:
+          type: anitya
+          project-id: 11551
+          url-template: https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-arm64-v$version.tar.gz
+
+  - name: gitea
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 gitea -t $FLATPAK_DEST/bin
+      - install -Dm755 gitea-wrapper -t $FLATPAK_DEST/bin
+      - install -Dm644 io.gitea.Gitea.desktop -t $FLATPAK_DEST/share/applications
+      - install -Dm644 io.gitea.Gitea.metainfo.xml -t $FLATPAK_DEST/share/metainfo
+      - install -Dm644 io.gitea.Gitea.svg -t $FLATPAK_DEST/share/icons/hicolor/scalable/apps
+    sources:
+      - type: file
+        dest-filename: gitea
+        only-arches: [x86_64]
+        url: https://dl.gitea.com/gitea/1.19.3/gitea-1.19.3-linux-amd64
+        sha256: 1865e72b1302e2bae0a357b30fd747b770b622198e155c2bdf776cfbffca38b7
+        x-checker-data:
+          type: anitya
+          project-id: 13537
+          url-template: https://dl.gitea.com/gitea/$version/gitea-$version-linux-amd64
+
+      - type: file
+        dest-filename: gitea
+        only-arches: [aarch64]
+        url: https://dl.gitea.com/gitea/1.19.3/gitea-1.19.3-linux-arm64
+        sha256: 0dc5648fe09ccc585adc9bd1e4a2921344612ed709c522086f1a7009853041b8
+        x-checker-data:
+          type: anitya
+          project-id: 13537
+          url-template: https://dl.gitea.com/gitea/$version/gitea-$version-linux-arm64
+
+      - type: file
+        path: gitea-wrapper.sh
+        dest-filename: gitea-wrapper
+
+      - type: file
+        path: io.gitea.Gitea.svg
+
+      - type: file
+        path: io.gitea.Gitea.desktop
+
+      - type: file
+        path: io.gitea.Gitea.metainfo.xml

@@ -1,2 +1,2 @@
 # gitea-flatpak
-Flatpak for Gitea
+Flatpak for Gitea. This is WIP and not for production use.
