@@ -2,6 +2,7 @@ id: io.gitea.Gitea
 runtime: org.freedesktop.Platform
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
+command: gitea-wrapper
 finish-args:
   - --share=network
 
